@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectItem from '../components/ProjectItem';
 import dimiMonsterImage from '../assets/DIMIMONSTER.png';
 import CompetitionItem from '../components/CompetitionItem';
