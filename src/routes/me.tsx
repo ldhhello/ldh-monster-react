@@ -4,13 +4,6 @@ import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
 
 import dimiMonsterImage from '../assets/projectImg/dimimonster.png';
-import disasterEscapeImage from '../assets/projectImg/disasterescape.png';
-import dongmawolImage from '../assets/projectImg/dongmawol.jpg';
-import minesweeperImage from '../assets/projectImg/minesweeper.png';
-import osongStudioImage from '../assets/projectImg/osongstudio.png';
-import picknpickImage from '../assets/projectImg/picknpick.png';
-import TechStack from '../components/TechStack';
-
 import projectList from "../data/projectList.json"
 
 const Container = styled.div`
