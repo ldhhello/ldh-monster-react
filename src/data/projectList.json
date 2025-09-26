@@ -1,0 +1,59 @@
+[
+    {
+        "title": "콘솔 지뢰 찾기 게임",
+        "subtitle": "(2018)",
+        "techStack": [
+            "C++",
+            "Console"
+        ],
+        "image": "/images/project/minesweeper.png"
+    },
+    {
+        "title": "마피아 게임",
+        "subtitle": "(2021)",
+        "techStack": [
+            "C++",
+            "Boost.Asio",
+            "Java"
+        ],
+        "image": "/images/project/dongmawol.jpg"
+    },
+    {
+        "title": "O Song Studio",
+        "subtitle": "(2022)",
+        "techStack": [
+            "Python",
+            "Raspberry Pi",
+            "OpenCV"
+        ],
+        "image": "/images/project/osongstudio.png"
+    },
+    {
+        "title": "재난 탈출 시뮬레이션",
+        "subtitle": "(2022)",
+        "techStack": [
+            "C",
+            "Windows API",
+            "WebAssembly"
+        ],
+        "image": "/images/project/disasterescape.png"
+    },
+    {
+        "title": "DIMIMONSTER",
+        "subtitle": "(2024)",
+        "techStack": [
+            "React",
+            "CRA"
+        ],
+        "image": "/images/project/dimimonster.png"
+    },
+    {
+        "title": "Pick&Pick",
+        "subtitle": "(2025)",
+        "techStack": [
+            "React",
+            "styled-components"
+        ],
+        "image": "/images/project/picknpick.png"
+    }
+]

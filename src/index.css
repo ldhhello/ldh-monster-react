@@ -34,3 +34,8 @@ h1, h2, h3, h4, h5, h6, strong {
 body {
     background-color: #f0f6f7;
 }
+hr {
+    width: 90%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
