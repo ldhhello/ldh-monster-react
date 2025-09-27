@@ -1,9 +1,7 @@
-import ProjectItem from '../components/ProjectItem';
 import CompetitionItem from '../components/CompetitionItem';
 import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
 
-import dimiMonsterImage from '../assets/DIMIMONSTER.png';
 import projectList from "../data/projectList.json"
 
 const Container = styled.div`
