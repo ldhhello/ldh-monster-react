@@ -17,7 +17,7 @@ const Container = styled.div`
   }
 `;
 
-export default function Me() {
+export default function Portfolio() {
   return <Container>
     <div style={{height: '14rem'}}/>
     <h1>Projects</h1>

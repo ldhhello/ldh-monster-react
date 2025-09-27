@@ -1,13 +1,15 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Index from './routes'
-import Me from './routes/me'
+import Portfolio from './routes/portfolio'
+import Header from './components/Header'
 
 function App() {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path='/' element={<Index />} />
-        <Route path='/me' element={<Me />} />
+        <Route path='/portfolio' element={<Portfolio />} />
         <Route path='*' element={<div>Not found</div>} />
       </Routes>
     </BrowserRouter>
