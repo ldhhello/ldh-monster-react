@@ -1,5 +1,5 @@
-import { type PropsWithChildren } from 'react';
 import styled from 'styled-components';
+import ProjectItem from './ProjectItem';
 
 const Container = styled.div`
   display: grid;
@@ -14,12 +14,19 @@ const Container = styled.div`
   gap: 2rem;
 `;
 
-type Props = {
+type ProjectType = {
+  title: string,
+  subtitle: string,
+  techStack: string[],
+  image: string,
+};
 
+type Props = {
+  list: ProjectType[]
 }
 
-export default function ProjectBox({children}: PropsWithChildren<Props>) {
+export default function ProjectBox({ list }: Props) {
   return <Container>
-    {children}
+    {list.map(p => <ProjectItem {...p} />)}
   </Container>
 }

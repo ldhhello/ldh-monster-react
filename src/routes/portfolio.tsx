@@ -20,10 +20,9 @@ const Container = styled.div`
 export default function Portfolio() {
   return <Container>
     <div style={{height: '14rem'}}/>
+    
     <h1>Projects</h1>
-    <ProjectBox>
-      {projectList.map(p => <ProjectItem {...p} />)}
-    </ProjectBox>
+    <ProjectBox list={projectList} />
 
     <hr />
     <h1>Competitions</h1>
