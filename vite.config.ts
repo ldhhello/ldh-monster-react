@@ -7,7 +7,7 @@ export default defineConfig({
       plugins: [
         [
           '@swc/plugin-styled-components',
-          { displayName: false, minify: true }
+          { minify: true, ssr: false, fileName: false, displayName: false }
         ],
       ],
     })],
