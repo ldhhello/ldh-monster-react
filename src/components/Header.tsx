@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const HeaderBox = styled.header`
   padding-left: 1rem;
@@ -39,7 +39,7 @@ const HeaderBox = styled.header`
 
 export default function Header() {
   return <HeaderBox>
-      <Link to={'/'}>About Me</Link>
-      <Link to={'/portfolio'}>Portfolio</Link>
+      <NavLink to={'/'} style={a => a.isActive ? {fontFamily: 'Pretendard-Bold'} : {}}>About Me</NavLink>
+      <NavLink to={'/portfolio'} style={a => a.isActive ? {fontFamily: 'Pretendard-Bold'} : {}}>Portfolio</NavLink>
   </HeaderBox>
 }
