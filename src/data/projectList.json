@@ -1,7 +1,7 @@
 [
     {
         "title": "콘솔 지뢰 찾기 게임",
-        "subtitle": "(2018)",
+        "year": 2018,
         "techStack": [
             "C++",
             "Console"
@@ -10,7 +10,7 @@
     },
     {
         "title": "마피아 게임",
-        "subtitle": "(2021)",
+        "year": 2021,
         "techStack": [
             "C++",
             "Boost.Asio",
@@ -20,7 +20,7 @@
     },
     {
         "title": "O Song Studio",
-        "subtitle": "(2022)",
+        "year": 2022,
         "techStack": [
             "Python",
             "Raspberry Pi",
@@ -30,7 +30,7 @@
     },
     {
         "title": "재난 탈출 시뮬레이션",
-        "subtitle": "(2022)",
+        "year": 2022,
         "techStack": [
             "C",
             "Windows API",
@@ -40,7 +40,7 @@
     },
     {
         "title": "DIMIMONSTER",
-        "subtitle": "(2024)",
+        "year": 2024,
         "techStack": [
             "React",
             "CRA"
@@ -49,7 +49,7 @@
     },
     {
         "title": "Pick&Pick",
-        "subtitle": "(2025)",
+        "year": 2025,
         "techStack": [
             "React",
             "styled-components"

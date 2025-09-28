@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ProjectItem from './ProjectItem';
+import ProjectItem, {type Props as ProjectType} from './ProjectItem';
 
 const Container = styled.div`
   display: grid;
@@ -13,13 +13,6 @@ const Container = styled.div`
   padding-top: 5rem;
   gap: 2rem;
 `;
-
-type ProjectType = {
-  title: string,
-  subtitle: string,
-  techStack: string[],
-  image: string,
-};
 
 type Props = {
   list: ProjectType[]

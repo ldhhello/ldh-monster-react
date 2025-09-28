@@ -7,7 +7,7 @@ export default function Index() {
     <h1>Projects</h1>
     <ProjectItem
       title="DIMIMONSTER"
-      subtitle="(2024)"
+      year={2024}
       techStack={["React", "CRA"]}
       image={dimiMonsterImage} />
 

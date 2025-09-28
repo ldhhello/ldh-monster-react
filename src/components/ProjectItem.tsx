@@ -26,19 +26,19 @@ const ItemImage = styled.img`
   object-fit: contain;
 `
 
-type Props = {
+export type Props = {
   title: string,
-  subtitle?: string,
+  year?: number,
   techStack: string[],
   image: string,
   link?: string,
 };
 
-export default function ProjectItem({title, subtitle, image, techStack}: Props) {
+export default function ProjectItem({title, year, image, techStack}: Props) {
   return <Item>
     <ItemImage src={image} />
     <p>
-      <strong>{title}</strong> {subtitle}
+      <strong>{title}</strong> ({year})
     </p>
     <TechStack list={techStack} />
   </Item>
