@@ -1,6 +1,7 @@
 import ProjectItem from '../components/ProjectItem';
 import dimiMonsterImage from '../assets/DIMIMONSTER.png';
 import CompetitionItem from '../components/CompetitionItem';
+import ExplainBox from '../components/ExplainBox';
 
 export default function Index() {
   return <>
@@ -22,5 +23,7 @@ export default function Index() {
         세종정보올림피아드 시범대회 <strong>금상</strong> (2019)
       </CompetitionItem>
     </ul>
+
+    <ExplainBox image="/images/project/dimimonster.png" explain="디미몬스터" />
   </>
 }

@@ -21,8 +21,6 @@ const HeaderBox = styled.header`
   backdrop-filter: blur(13.3px);
   -webkit-backdrop-filter: blur(13.3px);
 
-  animation: fadein 1s ease 0s both;
-
   z-index: 1000;
 
   a { /* Link */
