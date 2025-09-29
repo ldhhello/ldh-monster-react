@@ -1,18 +1,25 @@
 import styled from 'styled-components';
 import geoAlt from '../assets/geo-alt.svg';
 
-const Container = styled.div`
+type ContainerProps = {
+  reversed?: boolean
+}
+const Container = styled.div<ContainerProps>`
   display: flex;
-  flex-direction: row;
+  flex-direction: ${({reversed}) => reversed ? 'row-reverse' : 'row'};
   gap: 13rem;
   align-items: center;
   justify-content: center;
 `;
-const Image = styled.img`
+
+type ImageProps = {
+  reversed?: boolean
+}
+const Image = styled.img<ImageProps>`
   height: 20rem;
   box-sizing: border-box;
   padding: 0.7rem;
-  transform: rotate(-3deg);
+  transform: rotate(${({reversed}) => reversed ? '2deg' : '-3deg'});
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0);
@@ -21,13 +28,18 @@ const Image = styled.img`
   backdrop-filter: blur(9.3px);
   -webkit-backdrop-filter: blur(9.3px);
 `;
-const InnerContainer = styled.p`
+
+type InnerProps = {
+  reversed?: boolean
+}
+const InnerContainer = styled.p<InnerProps>`
   display: flex;
   flex-direction: row;
   font-size: 1.6rem;
   gap: 0.7rem;
   width: 20rem;
   font-family: 'KyoboHand';
+  justify-content: ${({reversed}) => reversed ? 'end' : 'start'};
 `;
 
 type Props = {
@@ -37,9 +49,9 @@ type Props = {
 };
 
 export default function ExplainBox({image, explain, reversed}: Props) {
-  return <Container>
-    <Image src={image} />
-    <InnerContainer>
+  return <Container reversed={reversed}>
+    <Image src={image} reversed={reversed} />
+    <InnerContainer reversed={reversed}>
       <img src={geoAlt} />
       {explain}
     </InnerContainer>

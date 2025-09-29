@@ -25,5 +25,8 @@ export default function Index() {
     </ul>
 
     <ExplainBox image="/images/project/dimimonster.png" explain="디미몬스터" />
+    <ExplainBox image="/images/project/dimimonster.png" explain="디미몬스터" reversed />
+    <ExplainBox image="/images/project/dimimonster.png" explain="디미몬스터" />
+    <ExplainBox image="/images/project/dimimonster.png" explain="디미몬스터" reversed />
   </>
 }
