@@ -2,9 +2,12 @@ import ProjectItem from '../components/ProjectItem';
 import dimiMonsterImage from '../assets/DIMIMONSTER.png';
 import CompetitionItem from '../components/CompetitionItem';
 import ExplainBox from '../components/ExplainBox';
+import PrimaryBox from '../components/PrimaryBox';
 
 export default function Index() {
   return <>
+    <PrimaryBox />
+
     <h1>Projects</h1>
     <ProjectItem
       title="DIMIMONSTER"
