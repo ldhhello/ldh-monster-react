@@ -48,7 +48,7 @@ type Props = {
   reversed?: boolean
 };
 
-export default function ExplainBox({image, explain, reversed}: Props) {
+export default function ExplainItem({image, explain, reversed}: Props) {
   return <Container reversed={reversed}>
     <Image src={image} reversed={reversed} />
     <InnerContainer reversed={reversed}>
