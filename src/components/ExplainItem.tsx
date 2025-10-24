@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { media } from '../design/media';
 import geoAlt from '../assets/geo-alt.svg';
 
 type ContainerProps = {
@@ -10,6 +11,18 @@ const Container = styled.div<ContainerProps>`
   gap: 13rem;
   align-items: center;
   justify-content: center;
+
+  ${media.tablet`
+    gap: 8.5rem;
+  `}
+  ${media.tabletSmall`
+    gap: 5rem;
+  `}
+  ${media.mobile`
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  `}
 `;
 
 type ImageProps = {
@@ -27,6 +40,13 @@ const Image = styled.img<ImageProps>`
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(9.3px);
   -webkit-backdrop-filter: blur(9.3px);
+
+  ${media.tablet`
+    height: 17rem;
+  `}
+  ${media.tabletSmall`
+    height: 16rem;
+  `}
 `;
 
 type InnerProps = {
@@ -40,6 +60,14 @@ const InnerContainer = styled.p<InnerProps>`
   width: 20rem;
   font-family: 'KyoboHand';
   justify-content: ${({reversed}) => reversed ? 'end' : 'start'};
+  img {
+    width: 16px;
+  }
+
+  ${media.mobile`
+    text-align: center;
+    justify-content: center;
+  `}
 `;
 
 type Props = {
