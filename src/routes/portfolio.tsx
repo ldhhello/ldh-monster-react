@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import CompetitionItem from '../components/CompetitionItem';
 import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
@@ -15,6 +17,10 @@ const Container = styled.div`
 `;
 
 export default function Portfolio() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return <Container>
     <div style={{height: '14rem'}}/>
 
