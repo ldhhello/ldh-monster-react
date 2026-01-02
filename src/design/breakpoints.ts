@@ -1,4 +1,5 @@
 export type DeviceType = "desktopSmall" | 
+    "tabletBig" | 
     "tablet" |
     "tabletSmall" |
     "mobile" |
@@ -7,6 +8,7 @@ export type DeviceType = "desktopSmall" |
 // max-width (value - 1) 기준
 export const breakpoints: Record<DeviceType, number> = {
     desktopSmall: 1420,
+    tabletBig: 1220,
     tablet: 1020,
     tabletSmall: 840,
     mobile: 750,
