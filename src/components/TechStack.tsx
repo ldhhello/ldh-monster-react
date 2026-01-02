@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { media } from '../design/media';
 
 const Container = styled.div`
   display: flex;
@@ -6,6 +7,14 @@ const Container = styled.div`
   gap: 0.4rem;
 
   flex-wrap: wrap;
+
+  ${media.mobile`
+    gap: 0.3rem;
+    font-size: 0.95rem;
+  `}
+  ${media.mobileSmall`
+    font-size: 0.87rem;
+  `}
 `;
 
 const Item = styled.div`

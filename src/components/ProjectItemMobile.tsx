@@ -1,25 +1,30 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
-//import { media } from '../design/media';
+import { media } from '../design/media';
 
 const Item = styled.div`
   box-sizing: border-box;
-  height: 10rem;
+  height: 8.6rem;
   /* From https://css.glass */
   background: white;
 
   display: flex;
   flex-direction: row;
-  padding: 0.9rem;
+  padding: 0.6rem;
   align-items: center;
   justify-content: start;
   gap: 0.45rem;
 
-  min-width: 20rem;
+  min-width: 10rem;
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
+  ${media.mobileSmall`
+    p {
+      font-size: 1.02rem;
+    }
+  `}
 `;
 
 const InnerBox = styled.div`
@@ -29,9 +34,9 @@ const InnerBox = styled.div`
 `
 
 const ItemImage = styled.img`
-  height: 8.7rem;
+  height: 7.5rem;
   object-fit: contain;
-  width: 6.2rem;
+  width: 6rem;
 `
 
 const VerticalBar = styled.div`
