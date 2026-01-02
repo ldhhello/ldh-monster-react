@@ -42,21 +42,21 @@ const HeaderBox = styled.header`
     margin: 0;
     //border-radius: 0 0 16px 16px;
     border-radius: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    a {
-      font-size: 1.28rem;
-      padding-left: 0.4rem;
-      padding-right: 0.4rem;
-    }
-  `}
-  ${media.mobileSmall`
     padding-top: 4px;
     padding-bottom: 4px;
     a {
-      font-size: 1.24rem;
-      padding-left: 0.35rem;
-      padding-right: 0.35rem;
+      font-size: 1.23rem;
+      padding-left: 0.36rem;
+      padding-right: 0.36rem;
+    }
+  `}
+  ${media.mobileSmall`
+    padding-top: 3px;
+    padding-bottom: 3px;
+    a {
+      font-size: 1.2rem;
+      padding-left: 0.31rem;
+      padding-right: 0.31rem;
     }
   `}
 `;
