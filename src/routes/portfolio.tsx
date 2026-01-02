@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import CompetitionItem from '../components/CompetitionItem';
 import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
+import { media } from '../design/media';
 
 import projectList from "../data/projectList.json"
 
@@ -13,6 +14,10 @@ const Container = styled.div`
 
   ul {
     padding: 0;
+
+    ${media.mobileSmall`
+      width: 100vw;
+    `}
   }
 `;
 
