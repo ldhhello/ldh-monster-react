@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
-import { media } from '../design/media';
+//import { media } from '../design/media';
 
 const Item = styled.div`
   box-sizing: border-box;
