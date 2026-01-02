@@ -7,7 +7,7 @@ const Item = styled.div`
   height: 8.6rem;
   /* From https://css.glass */
   //background: white;
-  background: rgba(245, 245, 245, 0.46);
+  background: rgba(250, 246, 245, 0.46);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   display: flex;
