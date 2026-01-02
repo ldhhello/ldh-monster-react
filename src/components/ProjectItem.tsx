@@ -11,8 +11,8 @@ const Item = styled.div`
   background: rgba(245, 245, 245, 0.46);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(9.3px);
-  -webkit-backdrop-filter: blur(9.3px);
+  //backdrop-filter: blur(9.3px);
+  //-webkit-backdrop-filter: blur(9.3px);
 
   display: flex;
   flex-direction: column;

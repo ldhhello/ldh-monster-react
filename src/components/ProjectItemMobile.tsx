@@ -6,7 +6,9 @@ const Item = styled.div`
   box-sizing: border-box;
   height: 8.6rem;
   /* From https://css.glass */
-  background: white;
+  //background: white;
+  background: rgba(245, 245, 245, 0.46);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
   display: flex;
   flex-direction: row;
