@@ -20,6 +20,12 @@ const ProfileImg = styled.img`
   height: 14rem;
   border-radius: 19px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  ${media.mobile`
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 17px;
+  `}
 `;
 
 const InnerContainer = styled.div`
@@ -39,21 +45,21 @@ const InnerContainer = styled.div`
   ${media.mobile`
     align-items: center;
     h1 {
-      font-size: 1.95rem;
+      font-size: 1.8rem;
     }
     p {
       width: 20rem;
-      font-size: 1.07rem;
+      font-size: 1.04rem;
     }
   `}
   ${media.mobileSmall`
     gap: 0.48rem;
     h1 {
-      font-size: 1.85rem;
+      font-size: 1.7rem;
     }
     p {
       width: 18rem;
-      font-size: 1.04rem;
+      font-size: 1rem;
     }
   `}
 `;

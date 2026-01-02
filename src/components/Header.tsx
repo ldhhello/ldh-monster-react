@@ -51,10 +51,10 @@ const HeaderBox = styled.header`
     }
   `}
   ${media.mobileSmall`
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     a {
-      font-size: 1.2rem;
+      font-size: 1.17rem;
       padding-left: 0.31rem;
       padding-right: 0.31rem;
     }
