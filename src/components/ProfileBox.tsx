@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import profile from '../assets/profile-image.jpg';
+import { media } from '../design/media';
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   gap: 4.5rem;
+
+  ${media.mobile`
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1.3rem;
+  `}
 `
 
 const ProfileImg = styled.img`
@@ -27,6 +35,27 @@ const InnerContainer = styled.div`
     word-wrap: break-word;
     font-size: 1.1rem;
   }
+
+  ${media.mobile`
+    align-items: center;
+    h1 {
+      font-size: 1.95rem;
+    }
+    p {
+      width: 20rem;
+      font-size: 1.07rem;
+    }
+  `}
+  ${media.mobileSmall`
+    gap: 0.48rem;
+    h1 {
+      font-size: 1.85rem;
+    }
+    p {
+      width: 18rem;
+      font-size: 1.04rem;
+    }
+  `}
 `;
 
 export default function ProfileBox() {
