@@ -8,7 +8,7 @@ const Item = styled.div`
   box-sizing: border-box;
   height: 18rem;
   /* From https://css.glass */
-  background: rgba(250, 246, 245, 0.46);
+  background: rgba(247, 246, 245, 0.46);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   //backdrop-filter: blur(9.3px);
