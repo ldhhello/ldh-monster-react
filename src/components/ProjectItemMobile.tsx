@@ -4,7 +4,7 @@ import TechStack from './TechStack';
 
 const Item = styled.div`
   box-sizing: border-box;
-  height: 12rem;
+  height: 10rem;
   /* From https://css.glass */
   background: white;
 
@@ -29,14 +29,14 @@ const InnerBox = styled.div`
 `
 
 const ItemImage = styled.img`
-  height: 9.5rem;
+  height: 8.7rem;
   object-fit: contain;
   width: 6.2rem;
 `
 
 const VerticalBar = styled.div`
   width: 1px;
-  height: 80%;
+  height: 90%;
   margin-left: 3px;
   margin-right: 3px;
   background-color: black;
