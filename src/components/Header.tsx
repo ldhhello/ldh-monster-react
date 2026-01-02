@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { media } from '../design/media';
 
 const HeaderBox = styled.header`
   padding-left: 1rem;
@@ -7,6 +8,7 @@ const HeaderBox = styled.header`
 
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   position: fixed;
   top: 0;
@@ -33,6 +35,30 @@ const HeaderBox = styled.header`
     margin: 0.3rem;
     font-size: 1.3rem;
   }
+
+  ${media.mobile`
+    //background-color: red;
+
+    margin: 0;
+    //border-radius: 0 0 16px 16px;
+    border-radius: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    a {
+      font-size: 1.28rem;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+    }
+  `}
+  ${media.mobileSmall`
+    padding-top: 4px;
+    padding-bottom: 4px;
+    a {
+      font-size: 1.24rem;
+      padding-left: 0.35rem;
+      padding-right: 0.35rem;
+    }
+  `}
 `;
 
 export default function Header() {
