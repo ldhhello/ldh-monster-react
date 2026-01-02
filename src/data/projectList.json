@@ -16,7 +16,8 @@
             "Boost.Asio",
             "Java"
         ],
-        "image": "/images/project/dongmawol.jpg"
+        "image": "/images/project/dongmawol.jpg",
+        "link": "https://github.com/ldhhello/MafiaServer"
     },
     {
         "title": "O Song Studio",
@@ -26,7 +27,8 @@
             "Raspberry Pi",
             "OpenCV"
         ],
-        "image": "/images/project/osongstudio.png"
+        "image": "/images/project/osongstudio.png",
+        "link": "https://github.com/ldhhello/OSongStudio"
     },
     {
         "title": "재난 탈출 시뮬레이션",
@@ -36,7 +38,8 @@
             "Windows API",
             "WebAssembly"
         ],
-        "image": "/images/project/disasterescape.png"
+        "image": "/images/project/disasterescape.png",
+        "link": "https://github.com/ldhhello/DisasterEscape"
     },
     {
         "title": "DIMIMONSTER",
@@ -45,7 +48,8 @@
             "React",
             "CRA"
         ],
-        "image": "/images/project/dimimonster.png"
+        "image": "/images/project/dimimonster.png",
+        "link": "https://github.com/Dimi-Monster/dimi-monster-front"
     },
     {
         "title": "Pick&Pick",
@@ -54,6 +58,7 @@
             "React",
             "styled-components"
         ],
-        "image": "/images/project/picknpick.png"
+        "image": "/images/project/picknpick.png",
+        "link": "https://github.com/PickNPick/PickNPick-FE"
     }
 ]
