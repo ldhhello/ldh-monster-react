@@ -29,9 +29,9 @@ const InnerBox = styled.div`
 `
 
 const ItemImage = styled.img`
-  height: 10.8rem;
+  height: 9.5rem;
   object-fit: contain;
-  width: 10rem;
+  width: 6.2rem;
 `
 
 const VerticalBar = styled.div`
