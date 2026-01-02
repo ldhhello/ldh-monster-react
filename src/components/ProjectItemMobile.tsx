@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
 import { media } from '../design/media';
+import LinkButton from './LinkButton';
 
 const Item = styled.div`
   box-sizing: border-box;
@@ -57,13 +58,14 @@ export type Props = {
   link?: string,
 };
 
-export default function ProjectItemMobile({title, year, image, techStack}: Props) {
+export default function ProjectItemMobile({title, year, image, techStack, link}: Props) {
   return <Item>
     <ItemImage src={image} />
     <VerticalBar />
     <InnerBox>
       <p>
         <strong>{title}</strong> ({year})
+        {link && <LinkButton to={link} />}
       </p>
       <TechStack list={techStack} />
     </InnerBox>
