@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
+import { media } from '../design/media';
+import ProjectItemMobile from './ProjectItemMobile';
+import { useBreakpoint } from '../design/useBreakpoint';
 
 const Item = styled.div`
   box-sizing: border-box;
@@ -19,11 +22,21 @@ const Item = styled.div`
   gap: 0.5rem;
 
   min-width: 22rem;
+
+  ${media.tabletSmall`
+    height: 17rem;
+    min-width: 20rem;
+    padding: 0.9rem;
+    gap: 0.45rem;
+  `}
 `;
 
 const ItemImage = styled.img`
   height: 12rem;
   object-fit: contain;
+  ${media.tabletSmall`
+    height: 10.8rem;
+  `}
 `
 
 export type Props = {
@@ -35,6 +48,11 @@ export type Props = {
 };
 
 export default function ProjectItem({title, year, image, techStack}: Props) {
+  const { isMobile, isMobileSmall } = useBreakpoint();
+
+  if (isMobile || isMobileSmall)
+    return ProjectItemMobile({title, year, image, techStack});
+
   return <Item>
     <ItemImage src={image} />
     <p>
