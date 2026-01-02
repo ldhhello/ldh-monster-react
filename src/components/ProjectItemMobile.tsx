@@ -18,7 +18,7 @@ const Item = styled.div`
   min-width: 20rem;
 
   p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 `;
 

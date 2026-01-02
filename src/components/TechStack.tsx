@@ -4,6 +4,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   gap: 0.4rem;
+
+  flex-wrap: wrap;
 `;
 
 const Item = styled.div`
