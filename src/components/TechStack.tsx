@@ -33,7 +33,7 @@ const Item = styled.div<ContainerProps>`
   background: ${({color}) => color};
   color: ${({textColor}) => textColor};
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.11);
 `;
 
 export default function TechStack({list}: {list: string[]}) {
@@ -58,8 +58,8 @@ export default function TechStack({list}: {list: string[]}) {
     const chroma = 0.02;
     const hue = hash(name) / 998244353 * 360 * 10 % 360;
 
-    const textLightness = 0.6589;
-    const textChroma = 0.1686;
+    const textLightness = 0.6276;
+    const textChroma = 0.1488;
 
     return {
       color: `oklch(${lightness} ${chroma} ${hue})`,
