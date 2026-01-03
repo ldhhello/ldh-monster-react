@@ -5,7 +5,7 @@ import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
 import { media } from '../design/media';
 
-import projectList from "../data/projectList.json"
+import projectList from "../data/projectList.json";
 
 const Container = styled.div`
   display: flex;
@@ -30,6 +30,7 @@ export default function Portfolio() {
     <div style={{height: '14rem'}}/>
 
     <h1>Projects</h1>
+
     <ProjectBox list={projectList} />
 
     <hr />
