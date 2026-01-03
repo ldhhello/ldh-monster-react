@@ -34,6 +34,13 @@ const Item = styled.div<ContainerProps>`
   color: ${({textColor}) => textColor};
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.11);
+
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.17);
+    cursor: default;
+  }
 `;
 
 export default function TechStack({list}: {list: string[]}) {
