@@ -5,8 +5,7 @@ import { styled } from 'styled-components';
 import ProjectBox from '../components/ProjectBox';
 import { media } from '../design/media';
 
-import projectList from "../data/projectList.json"
-import TechStack from '../components/TechStack';
+import projectList from "../data/projectList.json";
 
 const Container = styled.div`
   display: flex;
@@ -31,10 +30,6 @@ export default function Portfolio() {
     <div style={{height: '14rem'}}/>
 
     <h1>Projects</h1>
-
-    <div>test</div>
-    <TechStack list={["a", "b", "c", "d", "김승억", "안녕하세요", "C++", "뭉탱이", "뭉탱이", "유링게슝", 
-      "O Song Studio", "sdfadfdsgerioh", "k"]}/>
 
     <ProjectBox list={projectList} />
 
