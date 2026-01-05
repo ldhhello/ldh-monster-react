@@ -60,5 +60,14 @@
         ],
         "image": "/images/project/picknpick.png",
         "link": "https://github.com/PickNPick/PickNPick-FE"
+    },
+    {
+        "title": "test",
+        "year": 2070,
+        "techStack": [
+            "MTE",
+            "U Ring Gesung"
+        ],
+        "image": "/images/project/dimimonster.png"
     }
 ]
