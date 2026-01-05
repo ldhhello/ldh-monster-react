@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import ProjectItem, {type Props as ProjectType} from './ProjectItem';
 import { media } from '../design/media';
+import { useState } from 'react';
 
 const Container = styled.div`
   display: grid;
@@ -34,7 +35,17 @@ type Props = {
 }
 
 export default function ProjectBox({ list }: Props) {
-  return <Container>
-    {list.map((p, idx) => <ProjectItem key={idx} {...p} />)}
-  </Container>
+  const maxShowCount = 6; // 펼치기 전에 최대로 보여줄 개수
+
+  const [showAll, setShowAll] = useState(false);
+
+  const showList = showAll ? list : list.slice(0, 6);
+
+  return <>
+    {showAll.toString()}
+    <Container>
+      {showList.map((p, idx) => <ProjectItem key={idx} {...p} />)}
+    </Container>
+    <button onClick={() => setShowAll(showAll => !showAll)}>click me</button>
+  </>
 }
