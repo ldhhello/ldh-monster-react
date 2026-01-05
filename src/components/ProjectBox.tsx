@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import ProjectItem, {type Props as ProjectType} from './ProjectItem';
 import { media } from '../design/media';
 import { useState } from 'react';
+import arrowImg from '../assets/arrow-down-short.svg';
 
 const Container = styled.div`
   display: grid;
@@ -30,6 +31,26 @@ const Container = styled.div`
   `}
 `;
 
+const ArrowButton = styled.button`
+  //background-color: red;
+  border: none;
+  box-sizing: border-box;
+
+  width: 100%;
+  margin-top: 2rem;
+
+  cursor: pointer;
+  /* From https://css.glass */
+  background: rgba(247, 246, 245, 0.46);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  img {
+    height: 35px;
+  }
+`;
+
 type Props = {
   list: ProjectType[]
 }
@@ -39,13 +60,15 @@ export default function ProjectBox({ list }: Props) {
 
   const [showAll, setShowAll] = useState(false);
 
-  const showList = showAll ? list : list.slice(0, 6);
+  const showList = showAll ? list : list.slice(0, maxShowCount);
 
   return <>
     {showAll.toString()}
     <Container>
       {showList.map((p, idx) => <ProjectItem key={idx} {...p} />)}
     </Container>
-    <button onClick={() => setShowAll(showAll => !showAll)}>click me</button>
+    {!showAll && <ArrowButton onClick={() => setShowAll(showAll => !showAll)}>
+      <img src={arrowImg} />
+    </ArrowButton>}
   </>
 }
