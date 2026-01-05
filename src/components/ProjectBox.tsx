@@ -63,7 +63,6 @@ export default function ProjectBox({ list }: Props) {
   const showList = showAll ? list : list.slice(0, maxShowCount);
 
   return <>
-    {showAll.toString()}
     <Container>
       {showList.map((p, idx) => <ProjectItem key={idx} {...p} />)}
     </Container>
