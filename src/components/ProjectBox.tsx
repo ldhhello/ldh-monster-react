@@ -42,12 +42,17 @@ const ArrowButton = styled.button`
   cursor: pointer;
   /* From https://css.glass */
   background: rgba(247, 246, 245, 0.46);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
 
   padding-top: 7px;
   padding-bottom: 7px;
   img {
     height: 35px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.075);
   }
 `;
 
