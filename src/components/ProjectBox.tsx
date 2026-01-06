@@ -3,6 +3,7 @@ import ProjectItem, {type Props as ProjectType} from './ProjectItem';
 import { media } from '../design/media';
 import { useState } from 'react';
 import arrowImg from '../assets/arrow-down-short.svg';
+import PopupImage from './PopupImage';
 
 const Container = styled.div`
   display: grid;
@@ -74,5 +75,6 @@ export default function ProjectBox({ list }: Props) {
     {!showAll && <ArrowButton onClick={() => setShowAll(showAll => !showAll)}>
       <img src={arrowImg} />
     </ArrowButton>}
+    <PopupImage src="/images/project/disasterescape.png" />
   </>
 }
