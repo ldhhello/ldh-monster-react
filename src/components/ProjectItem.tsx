@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
 import { media } from '../design/media';
-import ProjectItemMobile from './ProjectItemMobile';
-import { useBreakpoint } from '../design/useBreakpoint';
+//import ProjectItemMobile from './ProjectItemMobile';
+//import { useBreakpoint } from '../design/useBreakpoint';
 import LinkButton from './LinkButton';
 import { useState } from 'react';
 import PopupImage from './PopupImage';
