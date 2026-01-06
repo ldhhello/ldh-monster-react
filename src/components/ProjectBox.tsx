@@ -75,6 +75,6 @@ export default function ProjectBox({ list }: Props) {
     {!showAll && <ArrowButton onClick={() => setShowAll(showAll => !showAll)}>
       <img src={arrowImg} />
     </ArrowButton>}
-    <PopupImage src="/images/project/disasterescape.png" />
+    <PopupImage src="/images/project/disasterescape.png" onClick={() => alert("X clicked")}/>
   </>
 }

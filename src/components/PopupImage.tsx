@@ -1,3 +1,4 @@
+import React from "react";
 import { createPortal } from "react-dom"
 import styled from 'styled-components';
 import xImage from '../assets/x.svg';
@@ -50,14 +51,23 @@ const Xbutton = styled.button`
 type Props = {
   src: string,
   objectFit?: "fill" | "contain",
+  onClick?: Function
 }
 
 export default function PopupImage(props: Props) {
   const objectFit = props.objectFit || "contain";
-  return createPortal(<PopupBox>
+  const onClick = (event?: React.MouseEvent) => {
+    if (event && event.target !== event.currentTarget)
+      return;
+
+    if(props.onClick !== undefined)
+      props.onClick();
+  }
+
+  return createPortal(<PopupBox onClick={onClick}>
     <InnerBox>
       <Img src={props.src} style={{objectFit}}/>
-      <Xbutton>
+      <Xbutton onClick={() => onClick()}>
         <img src={xImage} />
       </Xbutton>
     </InnerBox>
