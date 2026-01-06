@@ -3,7 +3,9 @@ import ProjectItem, {type Props as ProjectType} from './ProjectItem';
 import { media } from '../design/media';
 import { useState } from 'react';
 import arrowImg from '../assets/arrow-down-short.svg';
-import PopupImage from './PopupImage';
+import { useBreakpoint } from '../design/useBreakpoint';
+import ProjectItemMobile from './ProjectItemMobile';
+// import PopupImage from './PopupImage';
 
 const Container = styled.div`
   display: grid;
@@ -65,16 +67,18 @@ export default function ProjectBox({ list }: Props) {
   const maxShowCount = 6; // 펼치기 전에 최대로 보여줄 개수
 
   const [showAll, setShowAll] = useState(false);
-
   const showList = showAll ? list : list.slice(0, maxShowCount);
+
+  const { isMobile, isMobileSmall } = useBreakpoint();
+  
 
   return <>
     <Container>
-      {showList.map((p, idx) => <ProjectItem key={idx} {...p} />)}
+      {(isMobile || isMobileSmall) && showList.map((p, idx) => <ProjectItemMobile key={idx} {...p} />)}
+      {!(isMobile || isMobileSmall) && showList.map((p, idx) => <ProjectItem key={idx} {...p} />)}
     </Container>
     {!showAll && <ArrowButton onClick={() => setShowAll(showAll => !showAll)}>
       <img src={arrowImg} />
     </ArrowButton>}
-    <PopupImage src="/images/project/disasterescape.png" onClick={() => alert("X clicked")}/>
   </>
 }

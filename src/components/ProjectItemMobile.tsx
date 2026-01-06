@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import TechStack from './TechStack';
 import { media } from '../design/media';
 import LinkButton from './LinkButton';
+import { useState } from 'react';
+import PopupImage from './PopupImage';
 
 const Item = styled.div`
   box-sizing: border-box;
@@ -60,8 +62,10 @@ export type Props = {
 };
 
 export default function ProjectItemMobile({title, year, image, techStack, link, scale}: Props) {
+  const [popup, setPopup] = useState(false);
+
   return <Item>
-    <ItemImage src={image} style={{scale}} />
+    <ItemImage src={image} style={{scale}} onClick={() => setPopup(true)}/>
     <VerticalBar />
     <InnerBox>
       <p>
@@ -70,5 +74,6 @@ export default function ProjectItemMobile({title, year, image, techStack, link, 
       </p>
       <TechStack list={techStack} />
     </InnerBox>
+    {popup && <PopupImage src={image} onClick={() => setPopup(false)}/>}
   </Item>
 }
