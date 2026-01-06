@@ -37,6 +37,7 @@ const Item = styled.div`
 const ItemImage = styled.img`
   height: 12rem;
   object-fit: contain;
+  cursor: pointer;
   ${media.tabletSmall`
     height: 10.8rem;
   `}
