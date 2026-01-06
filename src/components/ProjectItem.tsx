@@ -46,16 +46,20 @@ export type Props = {
   techStack: string[],
   image: string,
   link?: string,
+  scale?: number,
 };
 
-export default function ProjectItem({title, year, image, techStack, link}: Props) {
+export default function ProjectItem({title, year, image, techStack, link, scale}: Props) {
   const { isMobile, isMobileSmall } = useBreakpoint();
 
   if (isMobile || isMobileSmall)
-    return ProjectItemMobile({title, year, image, techStack, link});
+    return ProjectItemMobile({title, year, image, techStack, link, scale});
+
+  if (scale === undefined)
+    scale = 1;
 
   return <Item>
-    <ItemImage src={image} />
+    <ItemImage src={image} style={{scale}}/>
     <p>
       <strong>{title}</strong> ({year})
       {link && <LinkButton to={link} />}

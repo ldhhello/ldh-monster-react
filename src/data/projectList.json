@@ -59,7 +59,8 @@
             "CRA"
         ],
         "image": "/images/project/dimimonster.png",
-        "link": "https://github.com/Dimi-Monster/dimi-monster-front"
+        "link": "https://github.com/Dimi-Monster/dimi-monster-front",
+        "scale": 0.95
     },
     {
         "title": "Pick&Pick",
@@ -69,7 +70,8 @@
             "styled-components"
         ],
         "image": "/images/project/picknpick.png",
-        "link": "https://github.com/PickNPick/PickNPick-FE"
+        "link": "https://github.com/PickNPick/PickNPick-FE",
+        "scale": 1.3
     },
     {
         "title": "DayPick",
@@ -80,7 +82,8 @@
             "Drizzle"
         ],
         "image": "/images/project/daypick.svg",
-        "link": "https://github.com/TGthon/BE"
+        "link": "https://github.com/TGthon/BE",
+        "scale": 0.75
     },
     {
         "title": "Mosquito Detector",
@@ -90,6 +93,7 @@
             "Vite"
         ],
         "image": "/images/project/mosquito.png",
-        "link": "https://github.com/ldhhello/mosquito-detector"
+        "link": "https://github.com/ldhhello/mosquito-detector",
+        "scale": 0.78
     }
 ]
