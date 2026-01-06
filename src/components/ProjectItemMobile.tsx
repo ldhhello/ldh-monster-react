@@ -56,11 +56,12 @@ export type Props = {
   techStack: string[],
   image: string,
   link?: string,
+  scale?: number,
 };
 
-export default function ProjectItemMobile({title, year, image, techStack, link}: Props) {
+export default function ProjectItemMobile({title, year, image, techStack, link, scale}: Props) {
   return <Item>
-    <ItemImage src={image} />
+    <ItemImage src={image} style={{scale}} />
     <VerticalBar />
     <InnerBox>
       <p>
