@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import TechStack from './TechStack';
 import { media } from '../design/media';
-import ProjectItemMobile from './ProjectItemMobile';
-import { useBreakpoint } from '../design/useBreakpoint';
+//import ProjectItemMobile from './ProjectItemMobile';
+//import { useBreakpoint } from '../design/useBreakpoint';
 import LinkButton from './LinkButton';
+import { useState } from 'react';
+import PopupImage from './PopupImage';
 
 const Item = styled.div`
   box-sizing: border-box;
@@ -35,6 +37,7 @@ const Item = styled.div`
 const ItemImage = styled.img`
   height: 12rem;
   object-fit: contain;
+  cursor: pointer;
   ${media.tabletSmall`
     height: 10.8rem;
   `}
@@ -50,20 +53,23 @@ export type Props = {
 };
 
 export default function ProjectItem({title, year, image, techStack, link, scale}: Props) {
-  const { isMobile, isMobileSmall } = useBreakpoint();
+  // const { isMobile, isMobileSmall } = useBreakpoint();
 
-  if (isMobile || isMobileSmall)
-    return ProjectItemMobile({title, year, image, techStack, link, scale});
+  // if (isMobile || isMobileSmall)
+  //   return ProjectItemMobile({title, year, image, techStack, link, scale});
+
+  const [popup, setPopup] = useState(false);
 
   if (scale === undefined)
     scale = 1;
 
   return <Item>
-    <ItemImage src={image} style={{scale}}/>
+    <ItemImage src={image} style={{scale}} onClick={() => setPopup(true)}/>
     <p>
       <strong>{title}</strong> ({year})
       {link && <LinkButton to={link} />}
     </p>
     <TechStack list={techStack} />
+    {popup && <PopupImage src={image} onClick={() => setPopup(false)}/>}
   </Item>
 }
