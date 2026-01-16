@@ -49,7 +49,7 @@ const VerticalBar = styled.div`
   height: 90%;
   margin-left: 3px;
   margin-right: 3px;
-  background-color: black;
+  //background-color: black;
 `
 
 export type Props = {
